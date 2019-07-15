@@ -1,11 +1,12 @@
 $font_default : Roboto;
 $color_sign_in : #8bc34a;
 $color_header_text: #283238;
+$white: #FFFFFF;
 /* header text color === text content*/
 
 @mixin border_oval {
 	box-sizing: border-box;
-	border: 2.5px solid #FFFFFF;
+	border: 2.5px solid $white;
 	border-radius: 50%;
 }
 
@@ -16,12 +17,11 @@ $color_header_text: #283238;
 	line-height: $line-height;
 }
 
-
 @mixin border_dot {
 	height: 11px;
 	width: 11px;
 	margin-bottom: 39.5px;
-	border: 0.5px solid #FFFFFF;
+	border: 0.5px solid $white;
 	border-radius: 50%;	
 }
 
@@ -39,7 +39,7 @@ button {
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 	font-family: $font_default;
 
-	color: #FFFFFF;
+	color: $white;
 	letter-spacing: 1.33px;
 	line-height: 21px;
 	text-transform: uppercase;
@@ -61,7 +61,6 @@ button {
 			width: 82px;
 			height: 36px;
 			float: right;
-
 			border: 2px solid $color_sign_in;
 			border-radius: 100px;
 			text-align: center;
@@ -112,6 +111,7 @@ button {
 	span {
 		font-style: italic;
 	}
+
 	p {
 		text-align: justify;
 		font-size: 13px;
@@ -125,56 +125,54 @@ button {
 				height: 36px;
 				width: 36px;
 			}
+
 			.oval-1-part3 {
-				@include border_oval;
 				height: 109.5px;
 				width: 109.5px;
-			}
-			.oval-2-part3 {
 				@include border_oval;
+			}
+
+			.oval-2-part3 {
 				height: 45.5px;
 				width: 45.5px;
 				margin-top: -26px;
 				margin-left: 31px;
 				background-color: #7CB342;
-				display: flex;
-				align-items: center;
-				justify-content: center;
+				@include border_oval;
 
 				p {
 					height: 32px;
 					width: 14px;
 					margin-bottom: 0;
 					font-family: $font_default;
-					color: #FFFFFF;
+					color: $white;
 					@include text_size(24px,400,-0.05px,32px);
-
 				}
 			}
+
 			.text-part3 {
 				height: 42px;
 				width: 77px;
 				text-align: center;
 				margin-top: 13.75px;
 				font-family: $font_default;
-				color: #FFFFFF;
+				color: $white;
 				@include text_size(16px,400,1.33px,21px);
-
 			}
 		}
 	}
 
 	.three-dot {
-		.dot1 {
+		.dot-left {
 			@include border_dot;
 			background-color: #D8D8D8;
 		}
-		.dot2 {
+		.dot-center {
 			margin-left: 16.5px;
 			margin-right: 15px;
 			@include border_dot;
 		}
-		.dot3 {
+		.dot-right {
 			@include border_dot;
 		}
 	}
@@ -192,7 +190,7 @@ button {
 		.wrap-image {
 			.title-our-customer {
 				p {
-					color: #FFFFFF;
+					color: $white;
 					font-family: $font_default;
 				}
 			}
@@ -213,7 +211,7 @@ button {
 						margin-left: 9px;
 						
 						font-family: $font_default;
-						color: #FFFFFF;
+						color: $white;
 						.name-customer {
 							@include text_size(13px,300,-0.03px,13px);
 							margin:0;
@@ -231,25 +229,29 @@ button {
 				height: 11px;
 				margin-top: 20px;
 				margin-bottom: 15.5px;
-
 				padding: 0;
-				.dot1 {
-					@include border_dot;
+
+				.dot-left {
 					background-color: #D8D8D8;
+					@include border_dot;
 				}
-				.dot2 {
+
+				.dot-center {
 					margin-left: 23px;
 					margin-right: 21px;
 					@include border_dot;
 				}
-				.dot3 {
+
+				.dot-right {
 					@include border_dot;
 				}
 			}
+
 			.text-lorent {
+
 				p {
 					text-align: justify;
-					color: #FFFFFF;
+					color: $white;
 					font-family: $font_default;
 				}
 			}
@@ -268,10 +270,10 @@ button {
 
 
 @media (max-width: 768px) {
-
 	.display-mobile {
 		display: block;
 	}
+
 	.display-pc {
 		display: none !important;
 	}
@@ -279,6 +281,7 @@ button {
 	.col-2p {
 		width: 2%;
 	}
+
 	.col-96p {
 		width: 96%;
 	}
@@ -286,17 +289,18 @@ button {
 	.icon-and-title {
 		justify-content: center;
 		margin-bottom: 5px;
+
 		img {
 			height: 20px;
 			width: 20px;
 			margin-top: 4px;
 		}
+
 		h1 {
 			height: 32px;
 			margin-left: 10px;
 			margin-bottom: 0px;
 			color: #444444;
-
 			font-family: $font_default;
 			@include text_size(24px,300,-0.05px,32px);
 		}
@@ -309,6 +313,7 @@ button {
 			text-align: center;
 			padding:0px;
 		}
+
 		p {
 			line-height: 21px;
 			margin: 0;
@@ -332,6 +337,7 @@ button {
 			.about-us {
 				margin-top: 9px;
 			}
+
 			.sign-in {
 				margin-left: 23px;
 			}
@@ -352,12 +358,14 @@ button {
 				height: 20px;
 				margin: 0;
 			}
+
 			p {
 				height: 24px;
 				margin-bottom: 12px;
 				@include text_size(18px,400,-0.03px,24px);
 			}
 		}
+
 		.text-banner {
 			height: 11px;
 			font-size: 9px;
@@ -380,13 +388,16 @@ button {
 			width: 100%;
 			padding-top: 10px;
 		}
+
 		.content-learnt {
 			margin-top: 30px;
 			.text-content {
+
 				p {
 					padding-top:20px;
 				}
 			}
+
 			.btn-content {
 				margin-top: 20px;
 			}
@@ -400,9 +411,11 @@ button {
 			height: 271.34px;
 			width: 100%;
 		}
+
 		.content-report {
 			margin-top: 30px;
 			.text-content {
+
 				p {
 					padding-top:15px;
 					margin-bottom: 20px;
@@ -431,8 +444,10 @@ button {
 			height: 275px;
 			width: 100%;
 		}
+
 		.content-project {
 			margin-top: 30px;
+			
 			.btn-content {
 				margin-top: 35px;
 			}
@@ -442,13 +457,17 @@ button {
 	/*-----------------*/
 	.section-members {
 		height: 800px;
+		
 		.img-members {
 			height: 345px;
 			width: 100%;
 		}
+
 		.content-members {
 			margin-top: 30px;
+			
 			.text-content {
+
 				p {
 					height: 67px;
 					margin-left: 13px;
@@ -458,10 +477,12 @@ button {
 				margin-top: 20px;
 				margin-bottom: 7.5px;
 			}
+
 			.check-two {
 				margin-top: 7.5px;
 				margin-bottom: 7.5px;
 			}
+
 			.check-three {
 				margin-top: 7.5px;
 				margin-bottom: 0;
@@ -478,20 +499,22 @@ button {
 		height: 525px;
 		.content-our-customer {
 			.title-our-customer {
+
 				p {
 					margin-top: 25px;
 					margin-bottom: 38px;
-
 					height: 32px;
 					width: 144px;
 					@include text_size(24px,300,-0.05px,32px);
 				}
 			}
+
 			.text-lorent {
 				img {
 					height: 48px;
 					width: 48px;
 				}
+
 				p {
 					margin-bottom: 0;
 					margin-top: 5px;
@@ -520,12 +543,14 @@ button {
 					margin-bottom: 25px;
 				}
 			}
+
 			.list-link {
 				.title-footer {
 					color: #8BC34A;
 					font-family: $font_default;
 					@include text_size(12px,500,-0.02px,16px);
 				}
+
 				a {
 					color: #D0D8DC;
 					font-family: $font_default;
@@ -533,6 +558,7 @@ button {
 				}
 			}
 			.icon-social-network {
+
 				.list-icon-sn {
 					width: 115px;
 					img {
@@ -558,12 +584,15 @@ button {
 	.display-pc {
 		display: block;
 	}
+
 	.display-mobile {
 		display: none !important;
 	}
+
 	.col-xl-20p {
 		width: 20%;
 	}
+
 	.col-xl-60p {
 		width: 59%;
 	}
@@ -578,6 +607,7 @@ button {
 			margin-top: 14px;
 
 		}
+
 		h1 {
 			margin-left: 19px;
 			margin-bottom: 0px;
@@ -590,6 +620,7 @@ button {
 			height: 19px;
 			font-size: 14px;
 		}
+
 		p {
 			/*height: 168px;*/
 			line-height: 24px;
@@ -628,6 +659,7 @@ button {
 				margin-bottom: 53px;
 			}
 		}
+
 		.icon-and-text {
 			img {
 				width: 52px;
@@ -647,6 +679,7 @@ button {
 			font-size: 18px;
 			line-height: 24px;
 		}
+
 		.btn-start-top {
 			margin-top: 31px;
 			margin-bottom: 233px;
@@ -714,31 +747,36 @@ button {
 	.section-members,.section-customers {
 		box-shadow: 0 10px 10px 0 rgba(0,0,0,0.1);
 		
-			.text-content{
-				img {
-					height: 24px;	
-					width: 18px;
-				}
-				p {
-					height: 50px;
-					margin-left: 20px;
-				}
+		.text-content{
+			img {
+				height: 24px;	
+				width: 18px;
 			}
-			.check-one {
-				margin-top: 26px;
-				margin-bottom: 8.5px;
+
+			p {
+				height: 50px;
+				margin-left: 20px;
 			}
-			.check-two {
-				margin-top: 8.5px;
-				margin-bottom: 8.5px;
-			}
-			.check-three {
-				margin-top: 8.5px;
-				margin-bottom: 0;
-			}
-			.btn-content {
-				margin-bottom: 100px;
-			}
+		}
+
+		.check-one {
+			margin-top: 26px;
+			margin-bottom: 8.5px;
+		}
+
+		.check-two {
+			margin-top: 8.5px;
+			margin-bottom: 8.5px;
+		}
+
+		.check-three {
+			margin-top: 8.5px;
+			margin-bottom: 0;
+		}
+
+		.btn-content {
+			margin-bottom: 100px;
+		}
 		
 	}
 	/*-----------------*/
@@ -754,6 +792,7 @@ button {
 		height: 544px;
 		.content-our-customer {
 			.title-our-customer {
+
 				p {
 					margin-top: 50px;
 					margin-bottom: 48px;
@@ -767,15 +806,18 @@ button {
 					height: 72px;
 					width: 72px;
 				}
+
 				p {
 					margin: 50px 27px 0 27px;
 					height: 90px;
 					@include text_size(18px,300,-0.03px,30px);
 				}
 			}
+
 			.quote-left {
 				margin-left: 96px;
 			}
+
 			.quote-right {
 				margin-right: 96px;
 				margin-top: 110px;
@@ -808,6 +850,7 @@ button {
 					width: 96px;
 					margin-bottom: 36px;
 				}
+
 				p {
 					height: 13px;
 					width: 69px;
@@ -826,6 +869,7 @@ button {
 					font-family: $font_default;
 					@include text_size(12px,500,-0.02px,16px);
 				}
+
 				a {
 					color: #D0D8DC;
 					font-family: $font_default;
@@ -841,6 +885,7 @@ button {
 						width: 13px;
 					}
 				}
+
 				.text-footer {
 					height: 13px;
 					width: 69px;
