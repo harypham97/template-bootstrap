@@ -29,7 +29,6 @@
 
   .icon-and-title h1 {
     margin-left: 19px;
-    margin-bottom: 0px;
     font-size: 48px;
     font-weight: 400;
     letter-spacing: -0.05px;
@@ -42,8 +41,6 @@
   }
 
   .text-content p {
-
-    /*height: 168px;*/
     line-height: 24px;
     margin: 0;
     text-align: justify;
@@ -60,9 +57,8 @@
   }
 
   .header .ul-banner {
-    margin: 0;
+    margin: 43px 0 0 0;
     padding: 0;
-    margin-top: 43px;
   }
 
   .header .ul-banner .about-us {
@@ -76,14 +72,13 @@
   .header .logo-banner .hapo-erp {
     height: 77px;
     width: 256px;
-    margin-top: 165px;
-    margin-bottom: 53px;
+    margin: 165px 0 53px 0;
   }
 
   .header .icon-and-text img {
     width: 52px;
     height: 48px;
-    margin: 0 0 14px 0;
+    margin-bottom: 14px;
   }
 
   .header .icon-and-text p {
@@ -102,8 +97,7 @@
   }
 
   .header .btn-start-top {
-    margin-top: 31px;
-    margin-bottom: 233px;
+    margin: 31px 0 233px 0;
   }
 
   .section-learnt,
@@ -119,8 +113,7 @@
   .content-members,
   .content-project,
   .content-customers {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin: 100px 0 100px 0;
   }
 
   .img-learnt,
@@ -183,20 +176,17 @@
 
   .section-members .check-one,
   .section-customers .check-one {
-    margin-top: 26px;
-    margin-bottom: 8.5px;
+    margin: 26px 0 8.5px 0;
   }
 
   .section-members .check-two,
   .section-customers .check-two {
-    margin-top: 8.5px;
-    margin-bottom: 8.5px;
+    margin: 8.5px 0 8.5px 0;
   }
 
   .section-members .check-three,
   .section-customers .check-three {
     margin-top: 8.5px;
-    margin-bottom: 0;
   }
 
   .section-members .btn-content,
@@ -213,8 +203,7 @@
   }
 
   .section-our-customer .content-our-customer .title-our-customer p {
-    margin-top: 50px;
-    margin-bottom: 48px;
+    margin: 50px 0 48px 0;
     height: 63px;
     font-size: 48px;
     font-weight: 300;
@@ -241,8 +230,7 @@
   }
 
   .section-our-customer .content-our-customer .quote-right {
-    margin-right: 96px;
-    margin-top: 110px;
+    margin: 110px 96px 0 0;
   }
 
   .section-feature {

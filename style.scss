@@ -118,8 +118,7 @@ button {
 			.oval-bottom {
 				height: 45.5px;
 				width: 45.5px;
-				margin-top: -26px;
-				margin-left: 31px;
+				margin: -26px 0 0 31px;
 				background-color: #7CB342;
 				@include border_oval;
 
@@ -155,8 +154,7 @@ button {
 		}
 
 		.dot-center {
-			margin-left: 16.5px;
-			margin-right: 15px;
+			margin: 0 15px 0 16.5px;
 			@include border_dot;
 		}
 
@@ -223,8 +221,7 @@ button {
 		.wrap-text {
 			.three-dot {
 				height: 11px;
-				margin-top: 20px;
-				margin-bottom: 15.5px;
+				margin: 20px 0 20px 0;
 				padding: 0;
 
 				.dot-left {
@@ -233,8 +230,7 @@ button {
 				}
 
 				.dot-center {
-					margin-left: 23px;
-					margin-right: 21px;
+					margin: 0 21px 0 23px;
 					@include border_dot;
 				}
 

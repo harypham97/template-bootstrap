@@ -30,7 +30,6 @@
 
 		h1 {
 			margin-left: 19px;
-			margin-bottom: 0px;
 			@include text_size(48px, 400, -0.05px, 63px);
 		}
 
@@ -43,8 +42,6 @@
 		}
 
 		p {
-
-			/*height: 168px;*/
 			line-height: 24px;
 			margin: 0;
 			text-align: justify;
@@ -62,9 +59,8 @@
 		background-image: url('../template-bootstrap/banner.jpg');
 
 		.ul-banner {
-			margin: 0;
+			margin: 43px 0 0 0;
 			padding: 0;
-			margin-top: 43px;
 
 			.about-us {
 				margin-top: 5px;
@@ -80,8 +76,7 @@
 			.hapo-erp {
 				height: 77px;
 				width: 256px;
-				margin-top: 165px;
-				margin-bottom: 53px;
+				margin: 165px 0 53px 0;
 			}
 
 		}
@@ -90,7 +85,7 @@
 			img {
 				width: 52px;
 				height: 48px;
-				margin: 0 0 14px 0;
+				margin-bottom: 14px;
 			}
 
 			p {
@@ -108,8 +103,7 @@
 		}
 
 		.btn-start-top {
-			margin-top: 31px;
-			margin-bottom: 233px;
+			margin: 31px 0 233px 0;
 		}
 
 	}
@@ -127,8 +121,7 @@
 	.content-members,
 	.content-project,
 	.content-customers {
-		margin-top: 100px;
-		margin-bottom: 100px;
+		margin: 100px 0 100px 0;
 	}
 
 	.img-learnt,
@@ -206,18 +199,15 @@
 		}
 
 		.check-one {
-			margin-top: 26px;
-			margin-bottom: 8.5px;
+			margin: 26px 0 8.5px 0;
 		}
 
 		.check-two {
-			margin-top: 8.5px;
-			margin-bottom: 8.5px;
+			margin: 8.5px 0 8.5px 0;
 		}
 
 		.check-three {
 			margin-top: 8.5px;
-			margin-bottom: 0;
 		}
 
 		.btn-content {
@@ -242,8 +232,7 @@
 		.content-our-customer {
 			.title-our-customer {
 				p {
-					margin-top: 50px;
-					margin-bottom: 48px;
+					margin: 50px 0 48px 0;
 					height: 63px;
 					@include text_size(48px, 300, -0.09px, 63px);
 				}
@@ -269,8 +258,7 @@
 			}
 
 			.quote-right {
-				margin-right: 96px;
-				margin-top: 110px;
+				margin: 110px 96px 0 0;
 			}
 
 		}

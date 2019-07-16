@@ -103,8 +103,7 @@ button {
 .section-feature .content-feature .container-feature .oval-bottom {
   height: 45.5px;
   width: 45.5px;
-  margin-top: -26px;
-  margin-left: 31px;
+  margin: -26px 0 0 31px;
   background-color: #7CB342;
   box-sizing: border-box;
   border: 2.5px solid #FFFFFF;
@@ -146,8 +145,7 @@ button {
 }
 
 .section-feature .three-dot .dot-center {
-  margin-left: 16.5px;
-  margin-right: 15px;
+  margin: 0 15px 0 16.5px;
   height: 11px;
   width: 11px;
   margin-bottom: 39.5px;
@@ -210,8 +208,7 @@ button {
 
 .section-our-customer .content-our-customer .wrap-text .three-dot {
   height: 11px;
-  margin-top: 20px;
-  margin-bottom: 15.5px;
+  margin: 20px 0 20px 0;
   padding: 0;
 }
 
@@ -225,8 +222,7 @@ button {
 }
 
 .section-our-customer .content-our-customer .wrap-text .three-dot .dot-center {
-  margin-left: 23px;
-  margin-right: 21px;
+  margin: 0 21px 0 23px;
   height: 11px;
   width: 11px;
   margin-bottom: 39.5px;
