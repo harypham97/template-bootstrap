@@ -1,0 +1,267 @@
+@import "identify.scss";
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style-type: none;
+}
+
+button {
+	border-radius: 100px;
+	background: linear-gradient(311.12deg, #B4EC51 0%, #429321 100%);
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+	font-family: $font_default;
+	color: $white;
+	letter-spacing: 1.33px;
+	line-height: 21px;
+	text-transform: uppercase;
+	cursor: pointer;
+	height: 40px;
+	width: 144px;
+}
+
+.header {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	.ul-banner {
+		a {
+			font-family: $font_default;
+			@include text_size(12px, 400, 1px, 16px);
+		}
+
+		.sign-in {
+			width: 82px;
+			height: 36px;
+			float: right;
+			border: 2px solid $color_sign_in;
+			border-radius: 100px;
+			text-align: center;
+			line-height: 36px;
+
+			a {
+				color: $color_sign_in;
+				width: 100%;
+			}
+
+		}
+
+		.about-us {
+			a {
+				color: $color_header_text;
+			}
+
+		}
+
+	}
+
+	.icon-and-text {
+		p {
+			color: $color_header_text;
+			font-family: $font_default;
+			font-weight: 300;
+		}
+
+	}
+
+	.text-banner {
+		color: $color_header_text;
+		font-family: $font_default;
+		font-style: italic;
+		letter-spacing: -0.02px;
+		text-align: center;
+	}
+
+}
+
+.icon-and-title {
+	h1 {
+		color: #444444;
+		font-family: $font_default;
+		font-weight: 300;
+	}
+
+}
+
+.text-content {
+	color: $color_header_text;
+	font-family: $font_default;
+
+	span {
+		font-style: italic;
+	}
+
+	p {
+		text-align: justify;
+		font-size: 13px;
+	}
+
+}
+
+.section-feature {
+	.content-feature {
+		.container-feature {
+			img {
+				height: 36px;
+				width: 36px;
+			}
+
+			.oval-top {
+				height: 109.5px;
+				width: 109.5px;
+				@include border_oval;
+			}
+
+			.oval-bottom {
+				height: 45.5px;
+				width: 45.5px;
+				margin: -26px 0 0 31px;
+				background-color: #7CB342;
+				@include border_oval;
+
+				p {
+					height: 32px;
+					width: 14px;
+					margin-bottom: 0;
+					font-family: $font_default;
+					color: $white;
+					@include text_size(24px, 400, -0.05px, 32px);
+				}
+
+			}
+
+			.text-feature {
+				height: 42px;
+				width: 77px;
+				text-align: center;
+				margin-top: 13.75px;
+				font-family: $font_default;
+				color: $white;
+				@include text_size(16px, 400, 1.33px, 21px);
+			}
+
+		}
+
+	}
+
+	.three-dot {
+		.dot-left {
+			@include border_dot;
+			background-color: #D8D8D8;
+		}
+
+		.dot-center {
+			margin: 0 15px 0 16.5px;
+			@include border_dot;
+		}
+
+		.dot-right {
+			@include border_dot;
+		}
+
+	}
+
+}
+
+.section-our-customer {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url('../template-bootstrap/our-customers.jpg');
+
+	.content-our-customer {
+		.wrap-image {
+			.title-our-customer {
+				p {
+					color: $white;
+					font-family: $font_default;
+				}
+
+			}
+
+			.img-txt-customer {
+				.container-face {
+					img {
+						height: 80px;
+						width: 77.05px;
+						border: 2px solid #93A4AD;
+						border-radius: 100px;
+						margin-bottom: 16px;
+					}
+
+					.customer-text {
+						height: 49px;
+						width: 56.31px;
+						text-align: center;
+						margin-left: 9px;
+						font-family: $font_default;
+						color: $white;
+
+						.name-customer {
+							@include text_size(13px, 300, -0.03px, 13px);
+							margin: 0;
+						}
+
+						.job-customer {
+							@include text_size(9px, 300, -0.03px, 13px);
+							margin: 0;
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+		.wrap-text {
+			.three-dot {
+				height: 11px;
+				margin: 20px 0 20px 0;
+				padding: 0;
+
+				.dot-left {
+					background-color: #D8D8D8;
+					@include border_dot;
+				}
+
+				.dot-center {
+					margin: 0 21px 0 23px;
+					@include border_dot;
+				}
+
+				.dot-right {
+					@include border_dot;
+				}
+
+			}
+
+			.text-lorent {
+				p {
+					text-align: justify;
+					color: $white;
+					font-family: $font_default;
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+.section-project {
+	.text-content {
+		p {
+			padding-top: 15px;
+			margin-bottom: 15px;
+		}
+
+	}
+
+}
